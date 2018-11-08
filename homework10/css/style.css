@@ -11,15 +11,9 @@
     padding: 0;
 }
 body{
-    margin: 0px;
-	padding: 0px;
-    max-width: 1336px;
+    max-width: 1366px;
 }
 .logo{
-    position: relative;
-    left: 0;
-    top: 0;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
@@ -121,7 +115,7 @@ body{
 }
 .nav__menu-link{
     color: #ACA2A0;
-    font-weight:bolder;
+    font-weight: bolder;
     position: relative;
     text-decoration: none;
     margin-top: 55px;
@@ -145,7 +139,7 @@ body{
     transition: .8s;
 }
 .nav__menu-link--active, .nav__menu-link:hover {
-    color: rgba(167, 151, 151, 0.74);
+    color: rgba(167, 151, 151, 1);
     font-weight: 900;
 }
 .nav__menu-link--active:after, .nav__menu-link:hover:after {
@@ -163,10 +157,8 @@ footer{
     height: 111px;
 }
 .footer__title h5{
-    width: 248px;
-    height: 23px;
     color: white;
-    font-family: Rufina;
+    font-family: 'Rufina', serif;
     font-size: 28px;
     font-weight: 400;
     line-height: 33px;
@@ -179,12 +171,14 @@ footer{
     opacity: 0.5;
     color: white;
 }
+.fa-infinity:before {
+    content: "\f534";
+    margin: 8px 7px;
+}
 .addres-title h5{
-    width: 195px;
-    height: 15px;
     opacity: 0.5;
     color: white;
-    font-family: OpenSans;
+    font-family: 'OpenSans',sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 19px;
@@ -218,7 +212,6 @@ footer{
 i {    
     color: #605A58;
     font-size: 20px;
-    margin: 7px 10px;
 }
 .icons-link:hover {
     width: 36px;
@@ -231,29 +224,38 @@ i {
     width: 112px;
     height: 30px;
     color: white;
-    font-family: Rufina;
+    font-family: 'Rufina', serif;
     font-size: 28px;
     font-weight: 400;
     line-height: 31px;
 }
 .img{
-    margin:5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 .image:hover{
     opacity: 0.5;
     border: none;
     transition: .5s;
     cursor: pointer;
+    display: block;
+}
+header{
+    width: 1366px;
+}
+.content{
+    width: 1366px;
 }
 .main-background-container-footer {
-    width: 100%;
+    width: 1366px;
     height: 325px;
     background-color: #605a58;
     margin-top: 100px;
 }
 
 .main-container-footer {
-    width: 999px;
+    width: 1066px;
     margin: 0 auto;
     padding: 0px 34px;
     height: 325px;
@@ -261,28 +263,23 @@ i {
 }
 
 .footer-row {
-    width: 500px;
-    height: 125px;
+    width: 553px;
+    height: 123px;
     float: left;
-    /* background-color: blue; */
     margin-top: 39px;
 }
 
 .footer-p {
-    width: 602px;
-    height: 127px;
+    width: 562px;
+    height: 120px;
     float: left;
-    /* background-color: brown; */
-    margin-bottom: 35px;
 }
 
 .footer-myskills {
-    width: 384px;
+    width: 375px;
     height: 251px;
     float: right;
-    /* background-color: bisque; */
     margin-top: 39px;
-    margin-bottom: 35px;
 }
 
 .logo__img-footer {
@@ -321,6 +318,7 @@ i {
 
 .nav__list-footer {
     padding-left: 18px;
+    padding-top: 13px;
 }
 
 
@@ -337,14 +335,12 @@ i {
 
 
 .nav__list-footer-icon {
-    margin-top: 0px;
+    margin-top: 10px;
     margin-left: 18px;
-    margin-bottom: 0px;
     list-style: none;
     padding: 0;
-
     display: flex;
-    /* justify-content: flex-start; */
+    justify-content: flex-start;
 }
 
 .nav__item-footer-icon-1,
@@ -420,7 +416,6 @@ i {
 .myskills-column-footer {
     display: flex;
     flex-direction: column;
-    /* text-align: right; */
     float: left;
     width: 30px;
     height: 187px;
@@ -456,7 +451,6 @@ i {
     float: left;
     display: flex;
     flex-direction: column;
-    /* text-align: right; */
     float: left;
     width: 334px;
     height: 201px;
@@ -468,6 +462,7 @@ i {
     height: 13px;
     margin-top: 4px;
     display: flex;
+    cursor: pointer;
 }
 
 .box-element-1 {
@@ -485,17 +480,15 @@ i {
 
 .box-element-1:hover {
     background-color: #f79440;
+    cursor: pointer;
 }
 
 .box-element-1:hover ~.box-element-2 {
     opacity: 0.8;
     background-color: white;
+    cursor: pointer;
 }
 
-.box-element-2:hover{
-    opacity: 0.8;
-    background-color: white;
-}
 
 .box-element-2:hover ~.box-element-1 {
     background-color: #f79440;
@@ -506,6 +499,7 @@ i {
     height: 13px;
     margin-top: 22px;
     display: flex;
+    cursor: pointer;
 }
 
 .box-element-3 {
@@ -529,12 +523,6 @@ i {
     opacity: 0.8;
     background-color: white;
 }
-
-.box-element-4:hover{
-    opacity: 0.8;
-    background-color: white;
-}
-
 .box-element-4:hover ~.box-element-3 {
     background-color: #f79440;
 }
@@ -544,6 +532,7 @@ i {
     height: 13px;
     margin-top: 25px;
     display: flex;
+    cursor: pointer;
 }
 
 .box-element-5 {
@@ -567,12 +556,6 @@ i {
     opacity: 0.8;
     background-color: white;
 }
-
-.box-element-6:hover{
-    opacity: 0.8;
-    background-color: white;
-}
-
 .box-element-6:hover ~.box-element-5 {
     background-color: #f79440;
 }
@@ -583,6 +566,7 @@ i {
     height: 13px;
     margin-top: 25px;
     display: flex;
+    cursor: pointer;
 }
 
 .box-element-7 {
@@ -606,12 +590,6 @@ i {
     opacity: 0.8;
     background-color: white;
 }
-
-.box-element-8:hover{
-    opacity: 0.8;
-    background-color: white;
-}
-
 .box-element-8:hover ~.box-element-7 {
     background-color: #f79440;
 }
@@ -622,6 +600,7 @@ i {
     height: 13px;
     margin-top: 25px;
     display: flex;
+    cursor: pointer;
 }
 
 .box-element-9 {
@@ -645,12 +624,6 @@ i {
     opacity: 0.8;
     background-color: white;
 }
-
-.box-element-10:hover{
-    opacity: 0.8;
-    background-color: white;
-}
-
 .box-element-10:hover ~.box-element-9 {
     background-color: #f79440;
 }
@@ -661,6 +634,7 @@ i {
     height: 13px;
     margin-top: 25px;
     display: flex;
+    cursor: pointer;
 }
 
 .box-element-11 {
@@ -684,21 +658,9 @@ i {
     opacity: 0.8;
     background-color: white;
 }
-
-.box-element-12:hover{
-    opacity: 0.8;
-    background-color: white;
-}
-
 .box-element-12:hover ~.box-element-11 {
     background-color: #f79440;
 }
-
-
-
-
-
-
 .container-footer-last {
     width: 100%;
     max-height: 46px;
@@ -714,14 +676,13 @@ i {
 .nav {}
 
 .nav__list-footer-2 {
-    width: 999px;
+    width: 1066px;
     list-style: none;
     padding: 0;
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
     padding-top: 8px;
-
 }
 
 
@@ -739,7 +700,10 @@ i {
 }
 
 .nav__link-footer-2:hover {
-    border-bottom: 2px solid #605a58;
-    padding-left: 28px;
-    color: white;
+    color: #fff;
+    transition: .5s;
+}
+.location {
+    width:15px;
+    height: 15px;
 }
