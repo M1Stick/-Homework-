@@ -249,6 +249,7 @@ i {
     width: 100%;
     height: 325px;
     background-color: #605a58;
+    margin-top: 100px;
 }
 
 .main-container-footer {
@@ -353,9 +354,13 @@ i {
 
 .nav__item-footer-icon-2,
 .nav__item-footer-icon-4 {
-    margin-right: 16px;
+    margin-right: 15px;
 }
-
+.fa-infinity:before {
+    content: "\f534";
+    margin-left: 7px;
+    margin-top: 7px;
+}
 .nav__link-footer i {
     width: 36px;
     height: 36px;
