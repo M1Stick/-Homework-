@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,400i,700i|Karla');
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1300px;
+}
+header{
+    background-image: url(../img/things-arranged-3.jpg);
+    width: 1300px;
+    height: 637px;
+}
+.logo_link{
+    position: absolute;
+    left: 13%;
+    top: 7%;
+    display: block;
+}
+.logo_img{
+    width: 105px;
+    height: 23px;
+    display: block;
+}

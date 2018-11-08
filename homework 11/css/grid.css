@@ -3,9 +3,10 @@
     box-sizing: border-box;
 }
 .container {
-    max-width: 1140px;
+    max-width: 960px;
+    height: 637px;
     padding: 0 15px;
-    margin: 0 auto;
+    margin: 0 170px 0 0;
 }
 .row {
     margin: 0 -15px;
